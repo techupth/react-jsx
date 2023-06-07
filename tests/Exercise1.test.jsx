@@ -8,15 +8,13 @@ describe("Exercise1", () => {
     it('Exercise1 check using css or not', () => {
         render(<Exercise1 />);
 
-        screen.debug()
         const div = document.querySelectorAll("div")
         expect(div[1]).toHaveClass('article')
         expect(screen.getByText('TechUp Thailand')).toHaveClass('article-title');
         expect(screen.getByText('เตรียมพบกับหลักสูตรปั้นคุณเป็น Software Developer ภายใน 4 เดือน')).toHaveClass('article-body');
         expect(screen.getByText('techupth.com')).toHaveClass('article-link');
         expect(div[2]).toHaveClass('bootcamp-start-time')
-        // const currentDate = getCurrentDateTime()
-        // expect(screen.getByText(`${currentDate}`)).toBeInTheDocument
+
     });
 
     it("Exercise1 check using getCurrentDateTime()", async () => {
@@ -29,8 +27,6 @@ describe("Exercise1", () => {
         const data = await fs.readFileSync(exercisePath, "utf8");
         const regex = /getCurrentDateTime()/g;
         const found = data.match(regex);
-        console.log(data);
-        console.log(found);
         expect(found.length).toBe(2)
     })
 })
