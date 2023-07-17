@@ -6,7 +6,7 @@ import path from "path"
 
 describe("Exercise2", () => {
 
-    it("should pass props to Article components", async () => {
+    it("HTML Element มีการเขียน Attribute ตามหลัก JSX", async () => {
         render(<Exercise2 />);
         const exercisePath = path.join(
             process.cwd(),
