@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Exercise2 from '../src/Exercise2';
 import fs from "fs"
 import path from "path"
