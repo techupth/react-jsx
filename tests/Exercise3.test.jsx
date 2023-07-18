@@ -4,7 +4,7 @@ import Exercise1 from '../src/Exercise1';
 import fs from 'fs'
 import path from 'path'
 
-describe("Exercise1", () => {
+describe("Exercise3", () => {
     it("มีการ Execute ตัว Function getCurrentDateTime()", async () => {
         render(<Exercise1 />);
         const exercisePath = path.join(
